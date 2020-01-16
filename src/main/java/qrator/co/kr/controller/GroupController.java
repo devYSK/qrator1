@@ -8,12 +8,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.Locale;
 
 @Controller
-public class MasterController {
-
-    @RequestMapping(value = "/master/user/list", method = RequestMethod.GET)
+public class GroupController {
+    @RequestMapping(value = "/group/list", method = RequestMethod.GET)
     public String home(Locale locale, Model model) {
 
-      return "/master/master_user";
+        return "/group/group_list";
     }
 
 }
