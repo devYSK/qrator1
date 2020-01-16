@@ -10,7 +10,7 @@
 
 
             <li>
-                <a href="../widgets.html">
+                <a href="/kr/master/user/list">
                     <i class="fa fa-chain"></i>  <span>운영진 관리</span>
                     <span class="pull-right-container">
 
