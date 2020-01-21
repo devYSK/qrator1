@@ -21,9 +21,9 @@
                 <!-- 목록 -->
                 <div class="col-md-8 list-box">
                     <h4>
-                        운영자<div class="pull-right">
-                        <button type="button" class="btn bg-teal btn-sm refresh" >새로고침</button>
-                        <button type="button" class="btn btn-primary btn-sm show-add-box" >등록</button>
+                        브랜드 본사<div class="pull-right">
+                        <button type="button" class="btn bg-teal btn-sm refresh" id = "refresh_btn" >새로고침</button>
+                        <button type="button" class="btn btn-primary btn-sm show-add-box" id = "edit_btn" >등록</button>
                     </div>
                     </h4>
                     <div class="box box-default mb-auto">
@@ -44,10 +44,7 @@
                         </div>
                     </div>
 
-                </div>
-                <!--// 목록 -->
 
-                <div class="col-md-8">
                     <div class="box box-primary" style = "height: 700px">
 
                         <div class="box-body">
@@ -73,7 +70,159 @@
                         <!-- /.box-body -->
                     </div>
                     <!-- /.box -->
+
+
+                <!-- 등록 -->
+                <div class = "col-md-4" id="edit_form" style="display: none;">
+                    <h4> 법인 담당자 등록</h4>
+                    <div class="box box-warning mb-auto">
+                        <form role="form">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">구분</label>
+                                    <select name="널" class="form-control input-lg">
+                                        <option >본사</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">회사</label>
+                                    <select name="널" class="form-control input-lg">
+                                        <option >테스트회사</option>
+                                        <option >제이엔피솔루션</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">프랜차이즈명</label>
+                                    <input type="text" class="form-control input-lg" id="exampleInputEmail1" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">전화번호</label>
+                                    <input type="text" class="form-control input-lg" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">프랜차이즈 이메일 </label>
+                                    <input type="text" class="form-control input-lg" >
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">주소</label>
+                                    <input type="text" class="form-control input-lg" >
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" >브랜드소개</label>
+                                    <textarea style="height: 150px" class="form-control input-lg"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputFile">대표 사진 </label>
+                                    <input type="file" id="exampleInputFile">
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">상태</label>
+                                    <select name="널" class="form-control input-lg">
+                                        <option >사용</option>
+                                        <option >중지</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <!-- /.box-body -->
+
+                            <div class="box-footer">
+                                <div class="box-footer">
+                                    <button type="submit" class="btn btn-primary btn-sm">등록</button>
+                                    <button type="button" class="btn btn-danger btn-sm pull-right cancle-add">취소</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+
+
                 </div>
+                <!--// 등록 -->
+                </div>
+                <!--// 목록 -->
+
+                <!-- 상세보기 -->
+                <div class = "col-md-4" id="view_form" style="display: none">
+                    <h4 style="margin-bottom: 20px"> 상세보기<div class = "pull-right">
+                        <button type="button" class="btn btn-warning btn-sm " >수정</button>
+                         <button type="button" class="btn btn-danger btn-sm " >삭제</button>
+                    </div>
+                    </h4>
+                    <div class="box box-warning mb-auto">
+                        <div class="box-body">
+                            <table class="table table-bordered table-hover">
+
+                                <col width="150px"/>
+                                <tr>
+                                    <th>브랜드로고</th>
+                                    <th>브랜드이미지</th>
+                                </tr>
+                                <tr>
+                                    <th>프랜차이즈명</th>
+                                    <th>프랜차이즈명</th>
+                                </tr>
+                                <tr>
+                                    <th>관리회사</th>
+                                    <th>관리회사</th>
+                                </tr>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>본사</th>
+                                </tr>
+                                <tr>
+                                    <th>이메일</th>
+                                    <th>이메일@</th>
+                                </tr>
+                                <tr>
+                                    <th>전화번호</th>
+                                    <th>0101-3-2-3-4-2</th>
+                                </tr>
+                                <tr>
+                                    <th>브랜드소개</th>
+                                    <th>프리미엄ㅋ</th>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <th>주소임</th>
+                                </tr>
+                                <tr>
+                                    <th>상태</th>
+                                    <th>상태1</th>
+                                </tr>
+
+
+
+                            </table>
+
+                            <table class="table table-bordered table-hover" style="margin-top: 20px">
+                                <col width="150px"/>
+                                <tr>
+                                    <th>등록</th>
+                                    <th>등록자</th>
+                                </tr>
+                                <tr>
+                                    <th>등록일시</th>
+                                    <th>20123-2010-20102</th>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!--// 상세보기 -->
+
                 <!-- /.col -->
             </div>
 
@@ -82,10 +231,10 @@
         <!-- /.content -->
     </div>
 
+<%@ include file="../common/bottom.jsp"%>
 </div>
 
 
-<%@ include file="../common/bottom.jsp"%>
 
 
 <%@ include file="../common/script.jsp"%>
@@ -99,6 +248,21 @@
             "paging" : false,
             "scrollY": "200px"
         })
+    })
+
+
+    //리프레시 버튼
+    $(function () {
+        $('#refresh_btn').click(function () {
+            $('#edit_form').hide();
+            $('#view_form').hide();
+        });
+    })
+
+    // 등록 버튼
+    $('#edit_btn').click(function () {
+        $('#edit_form').show();
+        $('#view_form').hide();
     })
 
 </script>
