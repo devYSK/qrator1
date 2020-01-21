@@ -21,7 +21,7 @@
                 <!-- 목록 -->
                 <div class="col-md-8 list-box">
                     <h4>
-                        운영자<div class="pull-right">
+                        브랜드 지점<div class="pull-right">
                         <button type="button" class="btn bg-teal btn-sm refresh" >새로고침</button>
                         <button type="button" class="btn btn-primary btn-sm show-add-box" >등록</button>
                     </div>
@@ -77,17 +77,80 @@
                     <!-- /.box -->
                 </div>
                 <!-- /.col -->
-            </div>
+                <!-- 상세보기 -->
+                <div class = "col-md-4" id="view_form" style="display: none">
+                    <h4> 상세보기<div class = "pull-right">
+                        <button type="button" class="btn btn-warning btn-sm " >수정</button>
+                        <button type="button" class="btn btn-success btn-sm " >비밀번호수정</button>
+                        <button type="button" class="btn btn-danger btn-sm " >삭제</button>
+                    </div>
+                    </h4>
+                    <div class="box box-warning mb-auto">
+                        <div class="box-body">
+                            <table class="table table-bordered table-hover">
 
+                                <col width="150px"></col>
+                                <tr>
+                                    <th>회사</th>
+                                    <th>제이앤피설루션</th>
+                                </tr>
+                                <tr>
+                                    <th>이름</th>
+                                    <th>이름1</th>
+                                </tr>
+                                <tr>
+                                    <th>아이디</th>
+                                    <th>아이디1</th>
+                                </tr>
+                                <tr>
+                                    <th>이메일</th>
+                                    <th>이메일@</th>
+                                </tr>
+                                <tr>
+                                    <th>전화번호</th>
+                                    <th>전화번호1</th>
+                                </tr>
+                                <tr>
+                                    <th>상태</th>
+                                    <th>상태1</th>
+                                </tr>
+                                <tr>
+                                    <th>비고</th>
+                                    <th>비고</th>
+                                </tr>
+
+
+                            </table>
+
+                            <table class="table table-bordered table-hover" style="margin-top: 20px">
+                                <col width="150px"></col>
+                                <tr>
+                                    <th>등록</th>
+                                    <th>등록자</th>
+                                </tr>
+                                <tr>
+                                    <th>등록일시</th>
+                                    <th>20123-2010-20102</th>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!--// 상세보기 -->
+
+            </div>
             <!-- /.row -->
         </section>
         <!-- /.content -->
     </div>
 
+<%@ include file="../common/bottom.jsp"%>
 </div>
 
 
-<%@ include file="../common/bottom.jsp"%>
 
 
 <%@ include file="../common/script.jsp"%>

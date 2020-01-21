@@ -21,7 +21,7 @@
                 <!-- 목록 -->
                 <div class="col-md-8 list-box">
                     <h4>
-                        운영자<div class="pull-right">
+                        지점 메뉴<div class="pull-right">
                         <button type="button" class="btn bg-teal btn-sm refresh" >새로고침</button>
                         <button type="button" class="btn btn-primary btn-sm show-add-box" >등록</button>
                     </div>
@@ -82,10 +82,10 @@
         <!-- /.content -->
     </div>
 
+<%@ include file="../common/bottom.jsp"%>
 </div>
 
 
-<%@ include file="../common/bottom.jsp"%>
 
 
 <%@ include file="../common/script.jsp"%>
